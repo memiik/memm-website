@@ -1,0 +1,19 @@
+approval_policy = "never"
+sandbox_mode = "danger-full-access"
+
+[features]
+multi_agent = true
+
+[agents]
+enabled = true
+default_subagent_model = "gpt-6-luna"
+default_subagent_reasoning_effort = "high"
+max_concurrent_threads_per_session = 2
+
+[agents.researcher]
+description = "Read-only Unity project researcher. Finds relevant files and summarizes implementation details."
+config_file = "agents/researcher.toml"
+
+[agents.reviewer]
+description = "Reviews completed Unity changes for bugs, regressions, VRChat compatibility, and unnecessary complexity."
+config_file = "agents/reviewer.toml"
