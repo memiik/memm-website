@@ -17,8 +17,12 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: false,
-        blog: false,
+        docs: {
+          sidebarPath: './sidebars.js',
+        },
+        blog: {
+          showReadingTime: true,
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -39,7 +43,12 @@ const config = {
           src: 'img/memm.png',
         },
         items: [
-          {to: '/docs', label: 'Docs', position: 'left'},
+          {
+            type: 'docSidebar',
+            sidebarId: 'docsSidebar',
+            label: 'Docs',
+            position: 'left',
+          },
           {to: '/blog', label: 'Blog', position: 'left'},
         ],
       },
