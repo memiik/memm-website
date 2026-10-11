@@ -1,0 +1,21 @@
+.page {
+  display: flex;
+  min-height: calc(100vh - var(--ifm-navbar-height));
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1.5rem;
+}
+
+.content {
+  width: min(100%, 42rem);
+  text-align: center;
+}
+
+.content h1 {
+  margin-bottom: 0.75rem;
+}
+
+.content p {
+  margin-bottom: 0;
+  color: var(--ifm-color-emphasis-700);
+}
