@@ -11,6 +11,10 @@ const config = {
   future: {
     v4: true,
   },
+  organizationName: 'memiik',
+  projectName: 'memm-website',
+  deploymentBranch: 'main',
+  trailingSlash: false,
 
   presets: [
     [
