@@ -6,7 +6,7 @@ const config = {
   tagline: 'programmer socks? purely for productivity‚ obviously',
   favicon: 'img/memm.png',
   url: 'https://memm.dev',
-  baseUrl: '/',
+  baseUrl: '/memm-website/',
   onBrokenLinks: 'throw',
   future: {
     v4: true,
